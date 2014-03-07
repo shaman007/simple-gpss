@@ -1,0 +1,55 @@
+SIMULATE
+				
+##########VARIABLES############################
+				
+					VARIABLE STORED1
+					VARIABLE MEM1
+					VARIABLE QUE1
+					VARIABLE PRC1
+				
+##########INTERNET##################################
+
+M1:				QUEUE INET,100
+					ENTER INET,INET,1
+					PRIORITY 1
+					DEPART INET
+		
+##########MODEL################################
+
+M3:			  	QUEUE INST,100
+PRC1				VARIABLE PRC1,+,1
+MEM1				VARIABLE MEM1,+,35
+STORED1		VARIABLE STORED1,+,1
+					ENTER INST,INST,1
+PRC1				VARIABLE PRC1,-,1
+					TEST GE1,M2,STORED1,100
+PRC1				VARIABLE PRC1,+,3
+
+############NORMAL PROCESSING###############
+
+		        		ADVANCE 300,150  		
+		        		LEAVE INST,INST,1
+MEM1				VARIABLE MEM1,-,35
+STORED1		VARIABLE STORED1,-,1
+					LEAVE INET,INET,1
+PRC1				VARIABLE PRC1,-,3
+					TERMINATE 1
+	
+############MAIL QUEUE#########################      			
+
+M2:				PRIORITY 0,1
+QUE1				VARIABLE QUE1,+,1
+MEM1				VARIABLE MEM1,-,35
+STORED1		VARIABLE STORED1,-,1
+					QUEUE MAILQ
+					SEIZE MAILQ
+					DEPART MAILQ
+					ADVANCE 36000,100
+					RELEASE MAILQ
+QUE1				VARIABLE QUE1,-,1					
+					TEST GE1,M3,1,1
+					
+##########TRANSACTS####################
+
+					GENERATE	10,5,10,4,M1
+        				START 1
