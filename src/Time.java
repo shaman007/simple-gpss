@@ -3,8 +3,8 @@
  * Time.java 14.12.2003
  *
  * @author  Andrey Bondarenko 
- * @e-mail  bondarenko007@aport2000.ru
- * @license GPL
+ * @e-mail  me@andreybondarenko.com
+ * @license GPLv2
  */
 public class Time {
 	/** Global Timer for all events. */

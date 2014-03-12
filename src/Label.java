@@ -4,8 +4,8 @@
  * Label 24.02.2004
  *
  * @author  Andrey Bondarenko 
- * @e-mail  bondarenko007@aport2000.ru
- * @license GPL
+ * @e-mail  me@andreybondarenko.com
+ * @license GPLv2
  */
 public class Label {
 	/**

@@ -10,7 +10,9 @@ import java.util.regex.Pattern;
  * 
  * GPSS courcecode parser = GPSS frontend Created on 30 Januarry 2004, 18:55
  * 
- * @author Andrey Bondarenko @e-mail bondarenko007@aport2000.ru @license GPL
+ * @author Andrey Bondarenko 
+ * @e-mail me@andreybondarenko.com 
+ * @license GPLv2
  */
 /*
  * Output XML format for code parcer
