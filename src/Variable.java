@@ -7,7 +7,8 @@ import java.util.ArrayList;
 
 /**
  * @author shaman
- *  
+ * @e-mail me@andreybondarenko.com
+ * @license GPLv2
  */
 public class Variable {
 

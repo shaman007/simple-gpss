@@ -5,6 +5,8 @@
  */
 /**
  * @author shaman
+ * @e-mail me@andreybondarenko.com
+ * @license GPLv2
  */
 public class testfrontend {
 	/** Creates a new instance of testfrontend */
