@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 /**
  * @author shaman
- * @e-mail me@andreybondarenko.com
+ * @e-mail me@andreybondarenko.com 
  * @license GPLv2
  */
 public class Args {
