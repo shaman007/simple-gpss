@@ -18,6 +18,6 @@ public class testfrontend {
 	 */
 	public static void main(String[] args) {
 		Parse prs;
-		prs = new Parse("/Users/apple/Documents/workspace/gpss-snap/test.gpss", 0);
+		prs = new Parse("./gpss/test.gpss", 0);
 	}
 }
