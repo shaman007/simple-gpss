@@ -83,8 +83,7 @@ public class Time {
 				return;
 			}
 		} catch (Exception e) {
-			System.out
-					.println("<EXCEPTION function=Timer_Correct(Queue que,Schema sch) exception="
+			System.out.println("<EXCEPTION function=Timer_Correct(Queue que,Schema sch) exception="
 							+ e + "></EXCEPTION>");
 		}
 	}
